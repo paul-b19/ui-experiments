@@ -7,7 +7,7 @@ for (let i of splitText) {
   text.innerHTML += "<span>" + i + "</span>"
 }
 
-// version 1
+// text animation
 let char = 0
 let removeEffect = false
 let timer = setInterval(onTick, 50)
@@ -25,14 +25,3 @@ function onTick() {
     removeEffect = true
   }
 }
-
-// function onTick() {
-//   const span = text.querySelectorAll('span')[char]
-//   span.classList.add('fade')
-//   char++
-//   if (char === splitText.length) {
-//     clearInterval(timer)
-//     timer = null
-//     return
-//   }
-// }

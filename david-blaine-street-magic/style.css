@@ -4,12 +4,33 @@
   box-sizing: border-box;
 }
 
-body {
-  background: black;
+html, body {
+  overflow-y: hidden;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
+
+.text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 h1 {
-  color: white;
+  color: rgb(240, 20, 20);
   font-size: 3rem;
   font-family: sans-serif;
   text-align: center;
